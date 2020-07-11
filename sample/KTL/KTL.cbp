@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="KTL" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc8" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="KTL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add option="/MTd" />
+					<Add option="/Od" />
+					<Add option="/W3" />
+					<Add option="/ZI" />
+					<Add option="/DWIN32" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DSTRICT" />
+					<Add option="/D_DEBUG" />
+					<Add directory="." />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="XW-d" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="KTL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="E:/workspace/2016/KTL/KTL/.objs" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add option="/MT" />
+					<Add option="/W3" />
+					<Add option="/DWIN32" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/DSTRICT" />
+					<Add option="/DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="/INCREMENTAL:NO" />
+					<Add library="XW" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="./XW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="comdlg32" />
+			<Add library="gdiplus" />
+			<Add directory="./XW/lib" />
+		</Linker>
+		<Unit filename="DrawTool/DrawTool.cpp" />
+		<Unit filename="DrawTool/DrawTool.h" />
+		<Unit filename="DrawTool/DrawToolBasic.cpp" />
+		<Unit filename="DrawTool/DrawToolBasic.h" />
+		<Unit filename="DrawTool/DrawToolBasicAbsEquations.cpp" />
+		<Unit filename="DrawTool/DrawToolBasicEquations.cpp" />
+		<Unit filename="DrawTool/DrawToolBasicUtil.cpp" />
+		<Unit filename="DrawTool/DrawToolBasicUtil.h" />
+		<Unit filename="DrawTool/DrawToolBasicWindowProcedure.cpp" />
+		<Unit filename="DrawTool/DrawToolDef.h" />
+		<Unit filename="DrawTool/DrawToolDetail.h" />
+		<Unit filename="DrawTool/DrawToolDetailArc.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailFactory.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailHorizons.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailLine.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailLinearRegression.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailMisc.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailParallelLines.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailRays.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailText.cpp" />
+		<Unit filename="DrawTool/DrawToolDetailVerticals.cpp" />
+		<Unit filename="DrawTool/DrawToolFloatBar.cpp" />
+		<Unit filename="DrawTool/DrawToolFloatBar.h" />
+		<Unit filename="DrawTool/DrawToolFloatBarTracker.cpp" />
+		<Unit filename="DrawTool/DrawToolPropertyInput.cpp" />
+		<Unit filename="DrawTool/DrawToolPropertyInput.h" />
+		<Unit filename="DrawTool/DrawToolTextInput.cpp" />
+		<Unit filename="DrawTool/DrawToolTextInput.h" />
+		<Unit filename="KTL.cpp" />
+		<Unit filename="KTL.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="MainDlg.h" />
+		<Unit filename="XWView.h" />
+		<Unit filename="XW/include/CAAnimation.h" />
+		<Unit filename="XW/include/CALayer.h" />
+		<Unit filename="XW/include/CATextLayer.h" />
+		<Unit filename="XW/include/CGAffineTransform.h" />
+		<Unit filename="XW/include/CGContext+Func.h" />
+		<Unit filename="XW/include/CGContext.h" />
+		<Unit filename="XW/include/CoreGraphics.h" />
+		<Unit filename="XW/include/NSArray.h" />
+		<Unit filename="XW/include/NSAutoreleasePool.h" />
+		<Unit filename="XW/include/NSObject.h" />
+		<Unit filename="XW/include/NSObjectCoreRuntime.h" />
+		<Unit filename="XW/include/NSObjectRuntime.h" />
+		<Unit filename="XW/include/NSRange.h" />
+		<Unit filename="XW/include/NSString.h" />
+		<Unit filename="XW/include/UIImage.h" />
+		<Unit filename="XW/include/XWExport.h" />
+		<Unit filename="XW/include/ZXOC2CPP.h" />
+		<Unit filename="XW/include/class_id.h" />
+		<Unit filename="XW/include/helper.h" />
+		<Unit filename="res/KTL.ico" />
+		<Unit filename="resource.h" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
