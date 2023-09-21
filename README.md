@@ -10,7 +10,7 @@
 	* the attached chart view as the background layer and the hosted window.
 	* a Graphic Layer manages any number of independed chart graphs as sub layers. it is a connector between the hosted window and the sub chart graphs.
 	* a chart graph is abstracted as `DTAssistGraphisc` for extending.
-	* a Equation, some like `x=0` is a line, `0<x<1 and y = 1` is a line segment, `y*y = 1/2*PI*x*x` is a cycle. a Equation alos respond to tranform coords. a chart graph can use Equations to render, move-to and hit-test.
+	* a Equation, some like `x=0` is a line, `0<x<1 and y = 1` is a line segment, `x*x + y*y = r*r` is a cycle. a Equation alos respond to tranform coords. a chart graph can use Equations to render, move-to and hit-test.
 	* edit, a chart graph has three anchor points for location and editting, this software code support a framework for editing a chart graph.
 
 * Namings
